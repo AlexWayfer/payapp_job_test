@@ -1,0 +1,38 @@
+# frozen_string_literal: true
+
+source 'https://rubygems.org'
+
+gem 'alt_memery'
+gem 'faraday'
+gem 'faraday_middleware'
+gem 'grape'
+
+group :database do
+	gem 'pg'
+	gem 'sequel'
+end
+
+group :toys do
+	gem 'toys'
+
+	gem 'config_toys'
+	gem 'psql_toys'
+	gem 'sequel_migrations_toys'
+end
+
+group :lint do
+	gem 'rubocop'
+	gem 'rubocop-performance'
+	gem 'rubocop-rspec'
+	gem 'rubocop-sequel'
+end
+
+group :test do
+	gem 'rack-test'
+	gem 'rspec'
+	gem 'warning'
+end
+
+group :developemnt do
+	gem 'pry-byebug'
+end

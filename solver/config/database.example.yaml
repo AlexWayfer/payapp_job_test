@@ -1,0 +1,17 @@
+default: &default
+  :adapter: 'postgres'
+  # :host: 'localhost'
+  :database: 'solver'
+  :user: 'solver'
+  # :password: 'password'
+  :superuser: 'postgres'
+
+production:
+  <<: *default
+
+development:
+  <<: *default
+
+test:
+  <<: *default
+  :database: 'solver_test'

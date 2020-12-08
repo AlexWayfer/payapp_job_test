@@ -1,0 +1,8 @@
+## configuration
+/config/**/*
+!/config/**/*.example*
+!/config/**/*.rb
+!/config/**/*.erb
+
+## dumps
+/db/dumps/**/*

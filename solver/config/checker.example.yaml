@@ -1,0 +1,12 @@
+default: &default
+  :url: 'http://localhost:3001/api'
+
+production:
+  <<: *default
+
+development:
+  <<: *default
+
+test:
+  <<: *default
+  :database: 'solver_test'
